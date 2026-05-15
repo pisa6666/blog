@@ -7,6 +7,46 @@
 [![代码风格](https://img.shields.io/badge/代码风格-ESLint-4B32C3?logo=ESLint)](https://eslint.org/)
 [![代码风格](https://img.shields.io/badge/代码风格-Stylelint-263238?logo=Stylelint)](https://stylelint.io/)
 
+## 快速开始
+
+### 安装依赖
+
+```sh
+npm install -g pnpm
+```
+```sh
+pnpm i
+```
+
+### 初始配置
+
+```sh
+pnpm init-project # 初始化项目配置
+pnpm i -D @iconify-json/tabler @iconify-json/devicon # 图标依赖
+```
+
+- 在启动或部署项目时，你需要移除我的文章、我的个人信息、我的统计/评论配置。
+  - `blog.config.ts` 中的站点信息、Umami 站点统计、Cloudflare Insights 统计、Twikoo 评论服务源。
+  - `app.config.ts` 中的页脚导航、出生年份等。
+
+- 为保证开发体验，需要安装 ESLint、Stylelint 等 VS Code 扩展。如果你不喜欢此项目的格式化风格，可以在 `./eslint.config.mjs` 和 `./.vscode/settings.json` 中调整或者不安装 VS Code 扩展。
+
+- 如果文章 URL 和先前的不相同，可以通过编辑 `redirects.json` 来添加重定向。
+
+### 创建文章
+
+- 启用 `blog.config.ts` 中的 `article.useRandomPremalink`，即可在创建文章时随机生成 URL。
+
+```sh
+pnpm new
+```
+
+### 运行开发环境
+
+```sh
+pnpm dev
+```
+
 ## 特性
 
 [主题特性](https://blog.zhilu.site/theme) · [组件示例](https://blog.zhilu.site/previews/example)
@@ -66,45 +106,6 @@
 ├── edgeone.json # EdgeOne 配置
 ├── nuxt.config.ts # Nuxt 配置
 └── redirects.json # 旧站点重定向配置
-```
-
-## 快速开始
-
-### 安装依赖
-
-```sh
-npm install -g pnpm
-```
-```sh
-pnpm i
-```
-
-### 初始配置
-
-```sh
-pnpm init-project # 初始化项目配置
-```
-
-- 在启动或部署项目时，你需要移除我的文章、我的个人信息、我的统计/评论配置。
-  - `blog.config.ts` 中的站点信息、Umami 站点统计、Cloudflare Insights 统计、Twikoo 评论服务源。
-  - `app.config.ts` 中的页脚导航、出生年份等。
-
-- 为保证开发体验，需要安装 ESLint、Stylelint 等 VS Code 扩展。如果你不喜欢此项目的格式化风格，可以在 `./eslint.config.mjs` 和 `./.vscode/settings.json` 中调整或者不安装 VS Code 扩展。
-
-- 如果文章 URL 和先前的不相同，可以通过编辑 `redirects.json` 来添加重定向。
-
-### 创建文章
-
-- 启用 `blog.config.ts` 中的 `article.useRandomPremalink`，即可在创建文章时随机生成 URL。
-
-```sh
-pnpm new
-```
-
-### 运行开发环境
-
-```sh
-pnpm dev
 ```
 
 ### 构建生产环境
