@@ -1,6 +1,6 @@
 # 声明：Fork 纸鹿摸鱼处
 
-[主题特性]([[https://blog.zhilu.site/theme](https://github.com/L33Z22L11/blog-v3)](https://blog.zhilu.site/theme)) · [组件示例](https://blog.zhilu.site/previews/example)
+[主题特性](https://blog.zhilu.site/theme) · [组件示例](https://blog.zhilu.site/previews/example)
 
 ## 快速开始
 
