@@ -1,6 +1,6 @@
 # 声明：Fork 纸鹿摸鱼处
 
-[主题特性](https://blog.zhilu.site/theme) · [组件示例](https://blog.zhilu.site/previews/example)
+[主题特性](https://blog.zhilu.site/theme) · [组件示例](https://blog.zhilu.site/previews/example) · [GitHub](https://github.com/L33Z22L11/blog-v3)
 
 ## 快速开始
 
@@ -43,10 +43,6 @@ pnpm new
 ```sh
 pnpm dev
 ```
-
-## 特性
-
-[主题特性](https://blog.zhilu.site/theme) · [组件示例](https://blog.zhilu.site/previews/example)
 
 ## 目录结构
 
