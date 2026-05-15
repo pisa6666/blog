@@ -21,7 +21,9 @@ pnpm i
 ### 初始配置
 
 ```sh
-pnpm init-project # 初始化项目配置
+pnpm init-project # 初始化项目配置（重要！！！）
+```
+```sh
 pnpm i -D @iconify-json/tabler @iconify-json/devicon # 图标依赖
 ```
 
